@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flipkart Grid</h1>
+    
+    <div class="webcam-container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
+
+    <div class="models-container">
+        <div>
+            <h2>Model: Grocery Detection</h2>
+            <div id="grocery-result">Waiting for detection...</div>
+        </div>
+        <div>
+            <h2>Model: Fruit Freshness Detection</h2>
+            <div id="freshness-result">Waiting for detection...</div>
+        </div>
+        <div>
+            <h2>Model: OCR</h2>
+            <div id="ocr-result">Waiting for detection...</div>
+        </div>
+    </div>
+
+    <div>
+        <h2>Aruco ID: <span id="aruco-id">No ID detected</span></h2>
+        <p>Order ID: <span id="order-id">Not Assigned</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
